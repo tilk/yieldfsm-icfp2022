@@ -87,4 +87,21 @@ library
   hs-source-dirs: src
   exposed-modules:
     FSM.ICFP2022.Examples
+    FSM.ICFP2022.Updn
+
+-- Builds the executable 'clash', with simple project in scope
+executable clash
+  main-is: bin/Clash.hs
+  default-language: Haskell2010
+  Build-Depends: base, clash-ghc, yieldfsm-icfp2022
+  if !os(Windows)
+    ghc-options: -dynamic
+
+-- Builds the executable 'clashi', with simple project in scope
+executable clashi
+  main-is: bin/Clashi.hs
+  default-language: Haskell2010
+  if !os(Windows)
+    ghc-options: -dynamic
+  build-depends: base, clash-ghc, yieldfsm-icfp2022
 

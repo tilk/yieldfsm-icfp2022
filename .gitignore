@@ -2,6 +2,7 @@ _build/
 dist/
 dist-newstyle/
 .stack-work/
+verilog/
 *.hi
 *.o
 *.swp
