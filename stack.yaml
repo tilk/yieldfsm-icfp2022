@@ -1,0 +1,6 @@
+resolver: lts-18.17
+
+extra-deps:
+  - github: tilk/yieldfsm
+    commit: 6d261c1fcba9301be127b992225a6c026883430f
+

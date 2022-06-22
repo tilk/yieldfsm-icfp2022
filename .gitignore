@@ -1,0 +1,8 @@
+_build/
+dist/
+dist-newstyle/
+.stack-work/
+*.hi
+*.o
+*.swp
+*.lock
